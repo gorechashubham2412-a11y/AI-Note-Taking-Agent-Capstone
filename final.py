@@ -1,6 +1,7 @@
 """
 AI Note-providing Agent From Text - Google 5-Day AI Agentic Program Capstone Project
 Features: Tool Use, Memory, and Evaluation
+Don't forget to add API key at line 14  
 """
 
 import os
@@ -10,7 +11,7 @@ from pathlib import Path
 import google.generativeai as genai
 
 # Configuration
-genai.configure(api_key="AIzaSyDBCI94TUcyGYbdH5rfJpREz0l6RnzUFPE")
+genai.configure(api_key="Add_your_api_here") # Add AIP here
 model = genai.GenerativeModel('gemini-2.5-flash')
 
 class NoteMemory:
@@ -228,4 +229,5 @@ def main():
 
 
 if __name__ == "__main__":
+
     main()
